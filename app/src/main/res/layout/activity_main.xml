@@ -10,50 +10,55 @@
         android:id="@+id/textViewHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="148dp"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/roboto"
         android:text="@string/this_is_budgeteer"
         android:textAlignment="center"
-        android:textSize="26sp"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewDescription"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textViewDescription"
-        android:layout_width="247dp"
-        android:layout_height="133dp"
-        android:layout_marginTop="84dp"
+        android:layout_width="292dp"
+        android:layout_height="130dp"
+        android:layout_marginBottom="120dp"
+        android:fontFamily="@font/lato"
         android:text="@string/budgeteer_is_an_app_to_help_you_manage_your_finances_in_a_detalized_manner_always"
         android:textAlignment="center"
-        android:textSize="22sp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/loginButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewHeading" />
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/loginButton"
-        android:layout_width="115dp"
+        android:layout_width="116dp"
         android:layout_height="50dp"
-        android:layout_marginTop="112dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/lato"
         android:text="@string/log_in"
+        app:layout_constraintBottom_toTopOf="@+id/registerButton"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewDescription"
         tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/registerButton"
-        android:layout_width="115dp"
+        android:layout_width="116dp"
         android:layout_height="50dp"
-        android:layout_marginTop="13dp"
-        android:layout_marginBottom="120dp"
+        android:layout_marginBottom="108dp"
+        android:fontFamily="@font/lato"
         android:text="@string/register"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginButton"
-        app:layout_constraintVertical_bias="0.342"
         tools:ignore="TextContrastCheck" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
